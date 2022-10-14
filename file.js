@@ -54,13 +54,13 @@ window.onload = function () {
         this.segm[this.segm.length - 1].x1,
         this.segm[this.segm.length - 1].y1
       );
-      c.strokeStyle = "white";
+      c.strokeStyle = "black";
       c.lineWidth = this.b;
       c.stroke();
 
       c.beginPath();
       c.arc(this.segm[0].x0, this.segm[0].y0, 1, 0, 2 * Math.PI);
-      c.fillStyle = "white";
+      c.fillStyle = "black";
       c.fill();
 
       c.beginPath();
@@ -71,13 +71,13 @@ window.onload = function () {
         0,
         2 * Math.PI
       );
-      c.fillStyle = "white";
+      c.fillStyle = "black";
       c.fill();
       }else{
       for (let i = 0; i < this.segm.length; i++) {
         c.beginPath();
         c.arc(this.segm[i].x0, this.segm[i].y0, this.segm[i].b, 0, 2*Math.PI);
-        c.fillStyle = "white";
+        c.fillStyle = "black";
       c.fill();
       }
         c.beginPath();
@@ -86,7 +86,7 @@ window.onload = function () {
         this.segm[this.segm.length - 1].y1,
         2, 0, 2*Math.PI
       );
-      c.fillStyle = "white";
+      c.fillStyle = "black";
       c.fill();
       }
     }
